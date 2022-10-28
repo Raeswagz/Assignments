@@ -1,0 +1,162 @@
+html, body {
+    height: 100%;
+      font-family: "Great Vibes", cursive;  
+  }
+  
+  a{
+    text-decoration: none;
+  
+  }
+  /*nav*/
+  nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: cursive;
+    
+  }
+  
+  nav h2{
+    margin-left: 30px;
+    margin-top: 13px;
+    margin-right: 0;
+  }
+  .links ul{
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+    margin-left: 0;
+  }
+  
+  li{
+    margin: 3px;
+  }
+  li a{
+    text-decoration: none;
+    color: black;
+  }
+  /*end of nav  */
+  /*main  */
+  #about-me{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    background: url(./landscape.jpg) no-repeat center;
+    background-size: cover;
+    border-bottom: 0;
+  }
+  .intro{
+    display: grid;
+    place-items: center;
+    border: 2px solid aqua;
+    height: 70%;
+    width: 70%;
+    padding: 10px;
+    text-align: center;
+    color: beige;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  img{
+    border-radius: 50%;
+    border: 2px solid aqua;
+    height: 100%;
+    width: 100%;
+  }
+  #services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: aliceblue;
+    padding: 20px;
+    text-align: center;
+  }
+  #services article{
+    border-right: 1px solid black;
+  }
+  #services hr{
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .project-section{
+    height: 200px;
+    text-align: center;
+    border-top: 0;
+  }
+  .projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    
+  }
+  .projects article{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 90%;
+    width: 80%;
+  }
+  .projects article:hover{
+    background-color: black;
+    color: white;
+  }
+  
+  .message{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 0.8rem;
+  }
+  input{
+    border: none;
+  }
+  .message hr{
+    margin-right: 50%;
+  }
+  button{
+    height: 30px;
+    width: 110px;
+    background-color: aliceblue;
+    border: 1px solid black;
+  }
+  button:hover{
+    background-color: transparent;
+  }
+  footer{
+    background-color: aliceblue;
+  }
+  footer h5{
+    padding-top: 30px;
+    margin-left: 10px;
+  }
+  footer p{
+    margin-left: 10px;
+  }
+  footer hr{
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  .copyright{
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  
+  /******mobile view*******/
+  @media (max-width: 599px){
+    nav{
+      justify-content: space-evenly;
+    }
+    nav h2{
+      display: none;
+    }
+    
+    #about-me{
+      display: block;
+      padding-top: 20px;
+    }
+  
+    .intro{
+      margin: auto;
+    }
+    img{
+      height: auto;
+      width: auto;
+    }
+  }
+  
